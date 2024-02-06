@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mobile page</title>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- remove input type="number" spinner up and down -->
+    <style>
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        /* display: none; <- Crashes Chrome on hover */
+        -webkit-appearance: none;
+        margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+      }
+
+      input[type="number"] {
+        -moz-appearance: textfield; /* Firefox */
+      }
+    </style>
+  </head>
+
+  <body id="mobileBody">
+    
+
+
+    <script src="./js/code_form.js"></script>
+  </body>
+</html>
